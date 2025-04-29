@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farje Khaled's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Farje Khaled</h1>
+        <p>Aspiring Software & Web Developer</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Farje Khaled, a student at Academy of Learning Career College. I've completed courses like HTML, CSS, Version Control, Software Development Overview, and more. I'm passionate about building clean, user-friendly websites and continuously improving my coding skills.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="gallery">
+            <img src="project1.jpg" alt="Screenshot of Project 1" onclick="openLightbox('project1.jpg')">
+            <img src="project2.jpg" alt="Screenshot of Project 2" onclick="openLightbox('project2.jpg')">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <span onclick="closeLightbox()">&#10006;</span>
+        <img id="lightbox-img" src="">
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
